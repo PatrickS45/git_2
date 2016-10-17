@@ -17,3 +17,9 @@ WCS\CoavBundle\Entity\Reservation:
             length: 255
             unique: true
     lifecycleCallbacks: {  }
+
+    manyToOne:
+        flight:
+            targetEntity: WCS\CoavBundle\Entity\Flight
+
+

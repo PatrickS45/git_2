@@ -29,3 +29,8 @@ WCS\CoavBundle\Entity\Terrain:
             length: 255
             unique: true
     lifecycleCallbacks: {  }
+
+    oneToMany:
+        departures:
+          targetEntity: WCS\CoavBundle\Entity\Flight
+          mappedBy: departure

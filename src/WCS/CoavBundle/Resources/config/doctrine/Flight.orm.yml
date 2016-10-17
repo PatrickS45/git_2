@@ -9,19 +9,25 @@ WCS\CoavBundle\Entity\Flight:
             generator:
                 strategy: AUTO
     fields:
-        departure:
-            type: string
-            length: '4'
-            unique: true
         arrival:
             type: string
             length: '4'
-            unique: true
         pilot:
             type: string
             length: 255
+            nullable: true
         freeSeats:
             type: integer
         takeTime:
             type: datetime
+            nullable: true
     lifecycleCallbacks: {  }
+
+
+    manyToOne:
+        departure:
+            targetEntity: WCS\CoavBundle\Entity\Terrain
+            inversedBy: departures
+        planeModel:
+            targetEntity: WCS\CoavBundle\Entity\PlaneModel
+
