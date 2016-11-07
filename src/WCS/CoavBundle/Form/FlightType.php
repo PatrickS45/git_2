@@ -15,7 +15,7 @@ class FlightType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('departure')
+
             ->add('arrival')
             ->add('pilot')
             ->add('freeSeats')

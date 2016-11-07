@@ -20,6 +20,6 @@ WCS\CoavBundle\Entity\Reservation:
 
     manyToOne:
         flight:
-            targetEntity: WCS\CoavBundle\Entity\Flight
+            targetEntity: WCS\CoavBundle\Entity\Reservation
 
 
